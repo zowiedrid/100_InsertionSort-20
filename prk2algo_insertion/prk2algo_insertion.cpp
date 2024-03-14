@@ -5,10 +5,20 @@
 using namespace std;
 
 void insertionSort() {
-    int i, n, temp, j;
-    int arr[9];
+    int i, n, temp, j; //deklarasi variabel
+    int arr[9]; //deklarasi array
 
+    for (i = 1; i <= n - 1; i++) { // step1
+        temp = arr[i]; // step2
+        j = i - 1; // step3
 
+        while (j >= 0 && arr[j] > temp) { //step4
+        
+        arr[j + 1] = arr[j]; //step4a nilai di kanan berarti akan diisi oleh nilai di kiri
+        j--; //step4b }
+
+        arr[j + 1] = temp; //step5
+    }
 }
 
 int main()
@@ -16,13 +26,3 @@ int main()
     std::cout << "Hello World!\n";
 }
 
-// Run program: Ctrl + F5 or Debug > Start Without Debugging menu
-// Debug program: F5 or Debug > Start Debugging menu
-
-// Tips for Getting Started: 
-//   1. Use the Solution Explorer window to add/manage files
-//   2. Use the Team Explorer window to connect to source control
-//   3. Use the Output window to see build output and other messages
-//   4. Use the Error List window to view errors
-//   5. Go to Project > Add New Item to create new code files, or Project > Add Existing Item to add existing code files to the project
-//   6. In the future, to open this project again, go to File > Open > Project and select the .sln file
