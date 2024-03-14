@@ -63,6 +63,8 @@ void display() {
 
 }
 int main() {
-
+	input(); //memanggil fungsi input
+	insertionSort(); //memanggil fungsi bubbleSortArray
+	display(); //memanggil fungsi display
 }
 
